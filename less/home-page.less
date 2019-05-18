@@ -29,6 +29,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      
+      @media @mobile{
+        .widthHeight(0,0);
+      }
     }
   }
 
@@ -51,19 +55,44 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile{
+      margin: 0;
+      .flexFlowDirection(column, column-reverse);
+      padding: 50px auto;
+    }
+
     .walk-text {
       width: 50%;
-
+      
       h3 {
         margin-bottom: 10px;
       }
-
+      
       p {
         margin-bottom: 26px;
       }
-
+      
       .btn {
+        .widthHeight(25%,10%);
+        background: @btn-bg-color;
+        font-family: 'Ubuntu', sans-serif;
+        border: none;
+        border-radius: 3px;
+        color: aliceblue;
+        font-size: 1.5rem;
         
+        @media @mobile{
+          .widthHeight(100%,100%);
+          padding: 5% 0;
+        }
+      }
+      @media @mobile{ 
+        width: 100%;
+        h3{
+          margin: 0px;
+          margin-top: 10px;
+          
+        }
       }
     }
 
@@ -75,6 +104,10 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+      @media @mobile{
+        width: 100%;
+        margin: 0 0;
       }
     }
   }
