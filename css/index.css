@@ -193,6 +193,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2%;
 }
 .home .intro h2 {
   padding: 15px;
