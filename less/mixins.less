@@ -1,1 +1,14 @@
 // Mixins Here
+.flexFlowDirection(@flow: row; @direction: row;){
+    flex-flow: @flow;
+    flex-direction: @direction;
+}
+
+.flexJustification(@justify: center; @align: center;){
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.borderMaker(@width: 1px; @style: solid; @color: black){
+    border: @width @style @color;
+}
