@@ -1,1 +1,27 @@
 // Navigation code here
+
+.navWrapper{
+    nav{
+        width:100%;
+        padding: 1.5%;
+        // margin: 0% auto;
+        display: flex;
+        .flexJustification(center, center);
+        background-color: @nav-bg;
+        a{
+            margin: 0 1.5%;
+            color: @nav-font;
+            .flexFlowDirection(row,row);
+            text-decoration: none;
+            font-size: 2rem;
+        }
+        
+    }
+    h1{
+        display: flex;
+        padding: 2% 0;
+        .flexJustification(center, center);
+        font-size: 4rem;
+        background: @nav-bg;
+    }
+}//navWrapper
